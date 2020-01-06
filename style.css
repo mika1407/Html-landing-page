@@ -152,6 +152,15 @@ nav {
   .presentation {
     flex-direction: column;
   }
+  .logo2,
+  .logo {
+    display: none;
+  }
+  .nav-link {
+    justify-content: space-around;
+    list-style: none;
+    font-size: 80%;
+  }
   .introduction {
     margin-top: 5vh;
     text-align: center;
@@ -165,18 +174,38 @@ nav {
   .cta {
     padding: 10px 0px 0px 0px;
   }
+
   .laptop-select {
-    bottom: 5%;
+    bottom: 0%;
     right: 50%;
     width: 50%;
+
     transform: translate(50%, 5%);
   }
   .cover img {
-    height: 80%;
+    height: 70%;
   }
   .small-eclipse,
   .mid-eclipse,
   .big-eclipse {
     opacity: 0.2;
+  }
+}
+@media screen and (max-width: 414px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .cover img {
+    height: 320px;
+  }
+  .nav-link {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    list-style: none;
+    font-size: 80%;
+  }
+  .cta-add,
+  .cta-select {
+    justify-items: center;
   }
 }
